@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout Activity</title>
+  <style>
+    .container {
+      width: 1200px;
+      height: 1000px;
+      border: 5px solid orange;
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .top {
+      height: 200px;
+      border: 3px solid purple;
+      margin-bottom: 10px;
+    }
+
+    .bottom {
+      flex: 1;
+      display: flex;
+      gap: 10px;
+    }
+
+    .left {
+      flex: 1;
+      border: 3px solid green;
+    }
+
+    .middle {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .middle-top,
+    .middle-bottom {
+      flex: 1;
+      border: 3px solid blue;
+    }
+
+    .right {
+      flex: 1;
+      border: 3px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top"></div>
+    <div class="bottom">
+      <div class="left"></div>
+      <div class="middle">
+        <div class="middle-top"></div>
+        <div class="middle-bottom"></div>
+      </div>
+      <div class="right"></div>
+    </div>
+  </div>
+</body>
+</html>

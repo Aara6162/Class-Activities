@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dog Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            padding: 20px;
+            margin: 0;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 15px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            line-height: 0;
+        }
+        .gallery-item:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border: 3px solid #000;
+            transform: scale(1.02);
+            z-index: 10;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        @media (min-width: 480px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>My Responsive Dog Gallery</h1>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="https://placehold.co/600x400/87CEEB/FFFFFF/png?text=Dog+1" alt="Dog 1">
+        </div>
+        <div class="gallery-item">
+            <img src="https://placehold.co/600x400/FFA07A/FFFFFF/png?text=Dog+2" alt="Dog 2">
+        </div>
+        <div class="gallery-item">
+            <img src="https://placehold.co/600x400/90EE90/FFFFFF/png?text=Dog+3" alt="Dog 3">
+        </div>
+        <div class="gallery-item">
+            <img src="https://placehold.co/600x400/F08080/FFFFFF/png?text=Dog+4" alt="Dog 4">
+        </div>
+        <div class="gallery-item">
+            <img src="https://placehold.co/600x400/ADD8E6/FFFFFF/png?text=Dog+5" alt="Dog 5">
+        </div>
+        <div class="gallery-item">
+            <img src="https://placehold.co/600x400/DDA0DD/FFFFFF/png?text=Dog+6" alt="Dog 6">
+        </div>
+        <div class="gallery-item">
+            <img src="https://placehold.co/600x400/FFD700/FFFFFF/png?text=Dog+7" alt="Dog 7">
+        </div>
+        <div class="gallery-item">
+            <img src="https://placehold.co/600x400/DA70D6/FFFFFF/png?text=Dog+8" alt="Dog 8">
+        </div>
+        <div class="gallery-item">
+            <img src="https://placehold.co/600x400/8FBC8F/FFFFFF/png?text=Dog+9" alt="Dog 9">
+        </div>
+    </div>
+</body>
+</html>
